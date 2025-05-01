@@ -1,0 +1,28 @@
+/angular-chat-app/angular-chat-app/src/app/app.component.scss
+
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #003DA5; /* HSBC blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #003DA5; /* HSBC blue */
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}

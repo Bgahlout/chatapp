@@ -1,0 +1,19 @@
+<div class="file-upload-container">
+    <h2>Upload File</h2>
+    <p>Choose a file to upload:</p>
+    <input type="file" (change)="onFileSelected($event)" />
+    <button (click)="onUpload()">Upload</button>
+
+    <div *ngIf="uploadedFiles.length > 0">
+        <h3>Uploaded Files</h3>
+        <ul>
+            <li *ngFor="let file of uploadedFiles">
+                {{ file.name }}
+                <button (click)="onDelete(file)">Delete</button>
+                <button (click)="onView(file)">View</button>
+            </li>
+        </ul>
+    </div>
+
+    <iframe *ngIf="selectedFile" [src]="selectedFileUrl" width="600" height="400"></iframe>
+</div>

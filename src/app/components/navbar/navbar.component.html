@@ -1,0 +1,16 @@
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Chat Application</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a routerLink="/login">Login</a></li>
+            <li><a routerLink="/chat">Chat</a></li>
+            <li><a routerLink="/files">Files</a></li>
+        </ul>
+        <div class="user-info">
+            <span>Welcome, {{ userName }}</span>
+            <button (click)="logout()">Logout</button>
+        </div>
+    </div>
+</nav>

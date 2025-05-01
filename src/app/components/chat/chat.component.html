@@ -1,0 +1,23 @@
+<div class="chat-container">
+    <div class="chat-header">
+        <h2>Chat with {{ selectedChat.name }}</h2>
+        <button (click)="deleteChat(selectedChat.id)">Delete Chat</button>
+        <button (click)="renameChat(selectedChat.id)">Rename Chat</button>
+    </div>
+    <div class="chat-messages" *ngFor="let message of selectedChat.messages">
+        <div class="message" [ngClass]="{'sent': message.sender === currentUser, 'received': message.sender !== currentUser}">
+            <span>{{ message.sender }}: {{ message.text }}</span>
+        </div>
+    </div>
+    <div class="chat-input">
+        <input type="text" [(ngModel)]="newMessage" placeholder="Type a message..." (keyup.enter)="sendMessage()" />
+        <button (click)="sendMessage()">Send</button>
+    </div>
+    <div class="file-upload">
+        <file-upload (fileUploaded)="onFileUploaded($event)"></file-upload>
+    </div>
+    <div class="uploaded-files">
+        <h3>Uploaded Files</h3>
+        <iframe *ngFor="let file of selectedChat.files" [src]="file.url" width="100%" height="300px"></iframe>
+    </div>
+</div>

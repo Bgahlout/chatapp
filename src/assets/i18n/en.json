@@ -1,0 +1,37 @@
+{
+  "login": {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot Password?"
+  },
+  "chat": {
+    "newChat": "New Chat",
+    "renameChat": "Rename Chat",
+    "deleteChat": "Delete Chat",
+    "chatPlaceholder": "Type a message...",
+    "sendButton": "Send",
+    "uploadFile": "Upload File",
+    "fileUploaded": "File uploaded successfully.",
+    "fileDeleted": "File deleted successfully."
+  },
+  "navbar": {
+    "home": "Home",
+    "chats": "Chats",
+    "logout": "Logout"
+  },
+  "fileUpload": {
+    "upload": "Upload",
+    "delete": "Delete",
+    "filePreview": "File Preview"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "error": {
+    "loginFailed": "Login failed. Please try again.",
+    "fileUploadError": "Error uploading file. Please try again."
+  }
+}

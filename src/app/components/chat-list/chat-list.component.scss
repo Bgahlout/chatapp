@@ -1,0 +1,45 @@
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f4f4f4; /* Light background for chat list */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #ffffff; /* White background for chat items */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+    background-color: #e0e0e0; /* Darker background on hover */
+}
+
+.chat-item .chat-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.chat-item .chat-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-item .chat-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #007bff; /* Primary color for action buttons */
+    transition: color 0.3s;
+}
+
+.chat-item .chat-actions button:hover {
+    color: #0056b3; /* Darker shade on hover */
+}

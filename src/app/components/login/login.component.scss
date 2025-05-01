@@ -1,0 +1,40 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.login-form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for the form */
+}
+
+.login-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333; /* Dark text for the heading */
+}
+
+.login-form .p-inputtext {
+    margin-bottom: 1rem; /* Space between input fields */
+}
+
+.login-button {
+    width: 100%; /* Full width for the button */
+    background-color: #0072c6; /* HSBC blue */
+    color: white; /* White text for the button */
+}
+
+.login-button:hover {
+    background-color: #005ea6; /* Darker blue on hover */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    margin-top: 1rem;
+}

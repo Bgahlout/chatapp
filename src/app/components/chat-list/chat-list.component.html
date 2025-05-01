@@ -1,0 +1,12 @@
+<div class="chat-list">
+    <h2>Chat List</h2>
+    <div *ngFor="let chat of chats" class="chat-item">
+        <div class="chat-title">
+            <span>{{ chat.name }}</span>
+            <button (click)="renameChat(chat)">Rename</button>
+            <button (click)="deleteChat(chat)">Delete</button>
+        </div>
+        <button (click)="openChat(chat)">Open Chat</button>
+    </div>
+    <button (click)="addNewChat()">Add New Chat</button>
+</div>

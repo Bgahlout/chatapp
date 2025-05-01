@@ -1,0 +1,52 @@
+$primary-color: #003DA5; // HSBC Blue
+$secondary-color: #A50034; // HSBC Red
+$background-color: #F5F5F5; // Light Grey
+$text-color: #333333; // Dark Grey
+$border-color: #E0E0E0; // Light Border
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+.navbar {
+    background-color: $primary-color;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+}
+
+.chat-window {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.file-upload {
+    border: 1px dashed $border-color;
+    padding: 20px;
+    text-align: center;
+}
+
+.file-preview {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
